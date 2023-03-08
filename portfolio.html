@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1B2A37">
+  <meta name="msapplication-TileColor" content="#d3c0be">
+  <meta name="theme-color" content="#d3c0be">
+
+  <title>Laura Galan - portfolio</title>
+
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <header>
+    <nav class="menu">
+      <a href="index.html" class="clickable">
+        <img class="logo" src="img/logo.png">
+      </a>
+      <label class="hamburgermenu" for="toggle" style="color:#f2e9e4">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menulist">
+        <li><a href="about.html" class="clickable">About</a></li>
+        <li><a href="portfolio.html" class="navactive">Portfolio</a></li>
+        <li><a href="contact.html" class="clickable">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align: center;">Professional projects I collaborated</h1>
+    <hr>
+    <div class="container">
+      <a href="https://arctaurus.com" target="_blank" class="clickable"><img src="img/arctaurus.png"></a>
+      <div class="info">
+        <h1><a href="https://arctaurus.com" target="_blank" class="clickable">ArcTaurus - arctaurus.com</a></h1>
+        <h2>design & development - PHP, CSS, JavaScript, <a href="https://developers.google.com/blockly" target="_blank">Blockly library</a></h2>
+        <h2>Website is currently inactive - the video showcases the functionality of the system</h2>
+        <h2>2022</h2>
+      </div>
+    </div>
+    <div id="video" style="margin:auto; padding-bottom: 2em;">
+        <div style="margin:auto; width: 100%; height: 100%; position: relative; border-radius: 5px;">
+            <video style="width: 100%; height: 100%; background: black; border-radius: 10px;">
+                <source type="video/mp4" src="https://d13m8wvbqsh6a2.cloudfront.net/media/video/01G7P4TYNE2740A5T8SYYEJNKV/01G7P4TYNE2740A5T8SYYEJNKV.mp4">
+            </video>
+            <div style="display: flex; position: absolute; width: 100%; bottom: 0; border-radius: 0 0 10px 10px; background: linear-gradient(to bottom, transparent, #000); align-items: center; transition: opacity .2s;">
+                <button alt="Video Play Button" title="Video Play Button" style="height: 40px; width: 40px; border: none; background: transparent; cursor: pointer; opacity: .8; transition: all .2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#ffffff8f">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <input title="Video Timeline" type="range" min="0" max="100" value="0" style="-webkit-appearance: none; width: calc(100% - 125px); height: .5em; background-color: rgba(255, 255, 255, .3); border-radius: 5px; background-size: 0 100%; background-image: linear-gradient(#fff, #acacac); background-repeat: no-repeat;">
+            <button style="height: 40px; width: 40px; border: none; background: transparent; cursor: pointer; opacity: .8; transition: all .2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff8f">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+                </svg>
+            </button>
+            <button title="Fullscreen Video" style="height: 35px; width: 35px; border: none; background: transparent; cursor: pointer; opacity: .8; transition: all .2s;">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ffaa33">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                </svg>
+            </button>
+          </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+      <a href="https://arctaurusjonty.pythonanywhere.com" target="_blank" class="clickable"><img src="img/nearestneighbour.png"></a>
+      <div class="info">
+        <h1><a href="https://arctaurusjonty.pythonanywhere.com" target="_blank" class="clickable">Nearest Neighbour - World Data Visualisation</a></h1>
+        <h2><a href="https://wdvp.worldgovernmentsummit.org" target="_blank" class="clickable">World Government Summit Contest 2023</a></h2>
+        <h2>design & development - Python, CSS, JavaScript</h2>
+        <h2>deployment - <a href="https://www.pythonanywhere.com" target="_blank">PythonAnywhere</a></h2>
+        <h2>2023</h2>
+        <!--<h2>Project made for World Government Summit Competition 2023</h2>-->
+      </div>
+    </div>
+    <br><br>
+    <h1 style="text-align: center;">Personal projects</h1>
+    <hr>
+    <div class="container">
+      <a href="https://kocisklep.com" target="_blank" class="clickable"><img src="img/kocisklep.png"></a>
+      <div class="info">
+        <h1><a href="https://kocisklep.com" target="_blank" class="clickable">Kocisklep - kocisklep.com</a></h1>
+        <h2>design & development - <a href="https://wordpress.org" target="_blank">Wordpress, WooCommerce</a></h2>
+        <h2>deployment - <a href="https://www.hostinger.pl" target="_blank">Hostinger</a></h2>
+        <h2>2022</h2>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <a href="https://kociocia.pl" target="_blank" class="clickable"><img src="img/kociocia.png"></a>
+      <div class="info">
+        <h1><a href="https://kociocia.pl" target="_blank" class="clickable">Kociocia - kociocia.pl</a></h1>
+        <h2>design & development - <a href="https://wordpress.org" target="_blank">Wordpress</a></h2>
+        <h2>deployment - <a href="https://www.hostinger.pl" target="_blank">Hostinger</a></h2>
+        <h2>2022</h2>
+      </div>
+    </div>
+    <br><br>
+    <h1 style="text-align: center;">University projects</h1>
+    <hr>
+    <div class="container">
+      <a href="https://growcafe.onrender.com" target="_blank" class="clickable"><img src="img/grow.png"></a>
+      <div class="info">
+        <h1><a href="https://growcafe.onrender.com" target="_blank" class="clickable">Grow cafe - growcafe.onrender.com</a></h1>
+        <h2>design & development - Python, HTML, CSS, JavaScript</h2>
+        <h2>deployment - <a href="https://render.com" target="_blank">Render</a></h2>
+        <h2>2021</h2>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <a href="https://galanlaurag.github.io" target="_blank" class="clickable"><img src="img/universe.png"></a>
+      <div class="info">
+        <h1><a href="https://galanlaurag.github.io" target="_blank" class="clickable">Text-based game - galanlaurag.github.io</a></h1>
+        <h2>design & development - HTML, CSS, JavaScript</h2>
+        <h2>deployment - <a href="https://github.com" target="_blank">Github</a></h2>
+        <h2>2021</h2>
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank" class="clickable"><img src="img/earth.png"></a>
+      <div class="info">
+        <h1><a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank" class="clickable">RecyQuiz prototype App</a></h1>
+        <h2>design & functionality - Axure</h2>
+        <h2>deployment - <a href="https://www.axure.com" target="_blank">Axure</a></h2>
+        <h2>2020</h2>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footerlinks">
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/linkedin.png" class="iconfooter">Linkedin</a>
+    </div>
+    <div class="mobilefooterlinks">
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/wlinkedin.png" class="iconfooter"></a>
+    </div>
+    <p class="copyright">Copyright © 2022 by <a href="https://galanlaura.com/"><img src="img/logo.png" class="logofooter"></a></p>
+  </footer>
+</body>
+</html>
