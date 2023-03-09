@@ -6,12 +6,16 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="manifest" href="favicon/webmanifest.json">
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#1B2A37">
   <meta name="msapplication-TileColor" content="#d3c0be">
   <meta name="theme-color" content="#d3c0be">
 
   <title>Laura Galan - portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+
 
   <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -19,7 +23,7 @@
   <header>
     <nav class="menu">
       <a href="index.html" class="clickable">
-        <img class="logo" src="img/logo.png">
+        <img class="logo" src="img/logo.png" alt="Logo">
       </a>
       <label class="hamburgermenu" for="toggle" style="color:#f2e9e4">&#9776;</label>
       <input type="checkbox" id="toggle">
@@ -34,116 +38,400 @@
   <main>
     <h1 style="text-align: center;">Professional projects I collaborated</h1>
     <hr>
-    <div class="container">
-      <a href="https://arctaurus.com" target="_blank" class="clickable"><img src="img/arctaurus.png"></a>
+    <div class="projectContainer expandMoreContent" id="showMore1">
+      <a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank" class="clickable"><img class="portfolioLogo" src="img/librate.png" alt="Librate Logo"></a>
       <div class="info">
-        <h1><a href="https://arctaurus.com" target="_blank" class="clickable">ArcTaurus - arctaurus.com</a></h1>
+        <h1><a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank">Librate - legal dashboard of information</a></h1>
+        <h2>design & functionality - <a href="https://www.figma.com" target="_blank">Figma</a></h2>
+        <h2>deployment - <a href="https://www.figma.com" target="_blank">Figma</a></h2>
+        <h2>2023</h2>
+      </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore1" class="button btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <span>This project is a prototype of a legal dashboard exploring how a cloud-based law firm can store information on deals in a single easy to use dashboard of information.</span>
+          <h1>My role</h1>
+          <hr class="lightHr">
+          <span>I was working on this project for about a month - collaborating in <b>brainstorming</b> the layout and presentation of features desired by a client and <b>designing</b> both low and high fidelity prototypes.</span>
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Designing a dashboard from scratch following formal written agenda</li>
+            <li>Working on dummy data from dataset</li>
+            <li>Significant improvement of my skills using Figma</li>
+          </ul>
+
+          <!--carousell-->
+          <div class="projectContainer fluid">
+            <div id="librateImages" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel" style="width:85%;margin:auto">
+              <!-- Indicators -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#librateImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#librateImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#librateImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#librateImages" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#librateImages" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/lowFidelity1.png" alt="1" class="d-block w-100">
+                  <span>First low-fidelity prototype</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/lowFidelity2.png" alt="2" class="d-block w-100">
+                  <span>Low-fidelity prototype - experimenting with different colour schemes</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/lowFidelity3.png" alt="3" class="d-block w-100">
+                  <span>Low-fidelity prototype - experimenting with different colour schemes</span>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank">
+                    <img src="img/highFidelityLightMode.png" alt="4" class="d-block w-100">
+                  </a>
+                  <span>High-fidelity prototype - light mode</span>
+                </div>
+
+                <div class="carousel-item">
+                  <a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank">
+                    <img src="img/highFidelityDarkMode.png" alt="5" class="d-block w-100">
+                  </a>
+                  <span>High-fidelity prototype - dark mode</span>
+                </div>
+              </div>
+              <!-- Previous/Next controls -->
+              <button class="carousel-control-prev" data-bs-target="#librateImages" type="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" data-bs-target="#librateImages" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="projectContainer expandMoreContent" id="showMore2">
+      <a href="https://arctaurusjonty.pythonanywhere.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/nearestneighbour.png" alt="Nearest Neighbour Logo"></a>
+      <div class="info">
+        <h1><a href="https://arctaurusjonty.pythonanywhere.com" target="_blank">Nearest Neighbour - World Data Visualisation Contest</a></h1>
+        <h2>design & development - Python, CSS, JavaScript</h2>
+        <h2>deployment - <a href="https://www.pythonanywhere.com" target="_blank">PythonAnywhere</a></h2>
+        <h2>2023</h2>
+      </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore2" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <span>This project was developed within a month as an entry for <a href="https://wdvp.worldgovernmentsummit.org" target="_blank">World Government Summit Contest 2023</a>.<br>
+            The goal of this project was to use <b>gamification</b> to present selected data about world's countries. Using controls users can interactively investigate the relationships and differences between countries that are visually presented on different charts and maps.</span>
+          <h1>My role</h1>
+          <hr class="lightHr">
+          <span>I was an originator of the concept - incorporating gamification by manipulating sliders to find the country that matches selected requirements best.
+          I was working primarily on <b>design</b>, <b>layout</b>, and <b>responsiveness</b> of the website.</span>
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Working under time pressure and to a tight deadline</li>
+            <li>Working with large datasets</li>
+            <li>Working with <a href="https://plotly.com/python/">plotly library</a> for maps and charts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="projectContainer expandMoreContent" id="showMore3">
+      <a href="https://arctaurus.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/arctaurus.png" alt="ArcTaurus Logo"></a>
+      <div class="info">
+        <h1><a href="https://arctaurus.com" target="_blank">ArcTaurus - no-code automated crypto trading bots</a></h1>
         <h2>design & development - PHP, CSS, JavaScript, <a href="https://developers.google.com/blockly" target="_blank">Blockly library</a></h2>
         <h2>Website is currently inactive - the video showcases the functionality of the system</h2>
         <h2>2022</h2>
       </div>
-    </div>
-    <div id="video" style="margin:auto; padding-bottom: 2em;">
-        <div style="margin:auto; width: 100%; height: 100%; position: relative; border-radius: 5px;">
-            <video style="width: 100%; height: 100%; background: black; border-radius: 10px;">
-                <source type="video/mp4" src="https://d13m8wvbqsh6a2.cloudfront.net/media/video/01G7P4TYNE2740A5T8SYYEJNKV/01G7P4TYNE2740A5T8SYYEJNKV.mp4">
-            </video>
-            <div style="display: flex; position: absolute; width: 100%; bottom: 0; border-radius: 0 0 10px 10px; background: linear-gradient(to bottom, transparent, #000); align-items: center; transition: opacity .2s;">
-                <button alt="Video Play Button" title="Video Play Button" style="height: 40px; width: 40px; border: none; background: transparent; cursor: pointer; opacity: .8; transition: all .2s;">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="#ffffff8f">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
-                </svg>
-            </button>
-            <input title="Video Timeline" type="range" min="0" max="100" value="0" style="-webkit-appearance: none; width: calc(100% - 125px); height: .5em; background-color: rgba(255, 255, 255, .3); border-radius: 5px; background-size: 0 100%; background-image: linear-gradient(#fff, #acacac); background-repeat: no-repeat;">
-            <button style="height: 40px; width: 40px; border: none; background: transparent; cursor: pointer; opacity: .8; transition: all .2s;">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="#ffffff8f">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
-                </svg>
-            </button>
-            <button title="Fullscreen Video" style="height: 35px; width: 35px; border: none; background: transparent; cursor: pointer; opacity: .8; transition: all .2s;">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#ffaa33">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
-                </svg>
-            </button>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore3" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <p>ArcTaurus is a drag and drop <b>no-code software</b>, tailored to automated cryptocurrency trading.
+            Using an open-source JavaScript <a href="https://developers.google.com/blockly" target="_blank">Blockly library</a>, it allows for the creation of no-code, block-based visual programs, which can then be used for personalised trading strategies.
+          <h1>My contribution</h1>
+          <hr class="lightHr">
+          <p>During 9 months of my part-time work on this project I was involved in a variety of tasks.<br>
+            My main focus was transforming this platform from entirely desktop-based into <b>responsive</b> and <b>more accessible</b> for users.<br>
+            Apart from that, I was involved in brainstorming, designing, and implementation of new features - e.g. styled pop-up <b>alerts</b>, <b>loading animation</b>, <b>search feature</b> of blocks in the toolbox, onboarding <b>guides</b> on how to use the system, <b>analytics charts</b>, or <b>split screen view</b> that was made to translate blocks into different forms (code, plain English, flowchart, etc.).
+          <h1>Main learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Blockly library basics</li>
+            <li>Collaboration with others using GitHub for version control, Slack for communication, and ClickUp for organisation of the work</li>
+            <li>Significant improvement of my CSS and JavaScript skills</li>
+          </ul>
+
+          <!--carousell-->
+          <div class="projectContainer fluid">
+            <div id="arctaurusImages" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel" style="width:85%;margin:auto">
+              <!-- Indicators -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#arctaurusImages" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              </div>
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/alert.png" alt="1" class="d-block w-100">
+                  <span>Alert styled using <a href="https://sweetalert2.github.io/">sweetalert library</a></span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/onboarding.gif" alt="2" class="d-block w-100">
+                  <span>Interactive onboarding guide slide</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/botwiki.png" alt="3" class="d-block w-100">
+                  <span>Bot wikipedia page explaining all blocks</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/blockToCode.png" alt="4" class="d-block w-100">
+                  <span>Split view - block translated into code</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/englishCode.png" alt="5" class="d-block w-100">
+                  <span>Split view - block translated into code in plain English</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/flowchart.png" alt="6" class="d-block w-100">
+                  <span>Split view - block translated into flowchart</span>
+                </div>
+
+                <div class="carousel-item">
+                  <img src="img/tradingview.png" alt="7" class="d-block w-100">
+                  <span>Split view - tradingview</span>
+                </div>
+              </div>
+              <!-- Previous/Next controls -->
+              <button class="carousel-control-prev" data-bs-target="#arctaurusImages" type="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" data-bs-target="#arctaurusImages" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
           </div>
         </div>
-    </div>
-    <hr>
-    <div class="container">
-      <a href="https://arctaurusjonty.pythonanywhere.com" target="_blank" class="clickable"><img src="img/nearestneighbour.png"></a>
-      <div class="info">
-        <h1><a href="https://arctaurusjonty.pythonanywhere.com" target="_blank" class="clickable">Nearest Neighbour - World Data Visualisation</a></h1>
-        <h2><a href="https://wdvp.worldgovernmentsummit.org" target="_blank" class="clickable">World Government Summit Contest 2023</a></h2>
-        <h2>design & development - Python, CSS, JavaScript</h2>
-        <h2>deployment - <a href="https://www.pythonanywhere.com" target="_blank">PythonAnywhere</a></h2>
-        <h2>2023</h2>
-        <!--<h2>Project made for World Government Summit Competition 2023</h2>-->
       </div>
     </div>
+    <div id="video" style="margin:auto; padding-bottom: 2em;">
+      <video style="width: 100%; height: 100%; background: black; border-radius: 10px;" controls>
+          <source type="video/mp4" src="https://d13m8wvbqsh6a2.cloudfront.net/media/video/01G7P4TYNE2740A5T8SYYEJNKV/01G7P4TYNE2740A5T8SYYEJNKV.mp4">
+      </video>
+    </div>
+
     <br><br>
     <h1 style="text-align: center;">Personal projects</h1>
     <hr>
-    <div class="container">
-      <a href="https://kocisklep.com" target="_blank" class="clickable"><img src="img/kocisklep.png"></a>
+    <div class="projectContainer expandMoreContent" id="showMore4">
+      <a href="https://kocisklep.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/kocisklep.png" alt="KociSklep Logo"></a>
       <div class="info">
-        <h1><a href="https://kocisklep.com" target="_blank" class="clickable">Kocisklep - kocisklep.com</a></h1>
+        <h1><a href="https://kocisklep.com" target="_blank">Kocisklep - e-commerce store</a></h1>
         <h2>design & development - <a href="https://wordpress.org" target="_blank">Wordpress, WooCommerce</a></h2>
         <h2>deployment - <a href="https://www.hostinger.pl" target="_blank">Hostinger</a></h2>
         <h2>2022</h2>
       </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore4" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <span>This is an e-commerce website for an e-commerce store selling products for cats that is run by my sister.</span>
+          <h1>My role</h1>
+          <hr class="lightHr">
+          <span>I <b>implemented</b> and <b>deployed</b> the e-commerce website using WordPress's free themes and plugins.<br>
+            E-commerce functionality was implemented using <a href="https://woocommerce.com/" target="_blank">WooCommerce</a>, newsletter feature is provided by <a href="https://www.mailerlite.com/" target="_blank">MailerLite</a>.<br>
+            There is some custom JavaScript and CSS code added to e.g., <b>translate some English words to Polish</b> or to <b>visually style</b> certain elements on the website as some free plugins that I used are not entirely flexible.<br>
+            I am also responsible for <b>maintaining</b> the website.</span>
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Working with Content Management System - WordPress</li>
+            <li>Working with various plugins - including e-commerce</li>
+            <li>Individual and independent work</li>
+            <li>Website management and administration</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <hr>
-    <div class="container">
-      <a href="https://kociocia.pl" target="_blank" class="clickable"><img src="img/kociocia.png"></a>
+    <div class="projectContainer expandMoreContent" id="showMore5">
+      <a href="https://kociocia.pl" target="_blank" class="clickable"><img class="portfolioLogo" src="img/kociocia.png" alt="Kociocia Logo"></a>
       <div class="info">
-        <h1><a href="https://kociocia.pl" target="_blank" class="clickable">Kociocia - kociocia.pl</a></h1>
+        <h1><a href="https://kociocia.pl" target="_blank">Kociocia - personal website & appointment booking system</a></h1>
         <h2>design & development - <a href="https://wordpress.org" target="_blank">Wordpress</a></h2>
         <h2>deployment - <a href="https://www.hostinger.pl" target="_blank">Hostinger</a></h2>
         <h2>2022</h2>
+      </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore5" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <span>This is my sister's personal website with interactive appointment booking functionality. It provides information about services offered by my sister, her qualifications, references, contact details, and appointment booking functionality for multiple services.</span>
+          <h1>My role</h1>
+          <hr class="lightHr">
+          <span>I <b>designed</b>, <b>implemented</b>, and <b>deployed</b> the entire website using WordPress free themes and plugins.<br>
+            Booking functionality was implemented using free version of <a href="https://wordpress.org/plugins/appointment-hour-booking/" target="_blank">Appointment Hour Booking plugin</a> and modified with JavaScript and CSS to e.g.
+            <b>disable certain time slots</b> when requested number of appointments per day have already got booked, <b>hide and show certain form fields</b> depending on service selected, and <b>visually style</b> the feature and the whole website - as free versions of plugin are usually not entirely flexible.<br>
+            I am also responsible for <b>maintaining</b> the website.</span>
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Individual and independent work using WordPress and various plugins </li>
+            <li>Website management and administration</li>
+            <li>Adjusting visual appearance of website manually with CSS code when free plugins form limitations</li>
+            <li>Adjusting existing free booking plugin to meet client expectations using JavaScript and CSS:</li>
+          </ul>
+          <a href="https://kociocia.pl/rezerwacje/" target="_blank"><img id="bookingImg" src="img/booking.png" alt="Booking Feature Screenshot"></a>
+        </div>
       </div>
     </div>
     <br><br>
     <h1 style="text-align: center;">University projects</h1>
     <hr>
-    <div class="container">
-      <a href="https://growcafe.onrender.com" target="_blank" class="clickable"><img src="img/grow.png"></a>
+    <div class="projectContainer expandMoreContent" id="showMore6">
+      <a href="https://glowcafe.onrender.com" target="_blank"><img class="portfolioLogo" src="img/glow.png" alt="Glow Logo"></a>
       <div class="info">
-        <h1><a href="https://growcafe.onrender.com" target="_blank" class="clickable">Grow cafe - growcafe.onrender.com</a></h1>
+        <h1><a href="https://growcafe.onrender.com" target="_blank">Glow cafe - redesigned version of Grow cafe</a></h1>
+        <h2>design & development - Python, HTML, CSS, JavaScript</h2>
+        <h2>deployment - <a href="https://render.com" target="_blank">Render</a></h2>
+        <h2>2023</h2>
+      </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore6" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+           <h1>My role</h1>
+          <hr class="lightHr">
+
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Individual and independent work using WordPress and various plugins </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="projectContainer expandMoreContent" id="showMore7">
+      <a href="https://growcafe.onrender.com" target="_blank"><img class="portfolioLogo" src="img/grow.png" alt="Grow Logo"></a>
+      <div class="info">
+        <h1><a href="https://growcafe.onrender.com" target="_blank">Grow cafe - restaurant website</a></h1>
         <h2>design & development - Python, HTML, CSS, JavaScript</h2>
         <h2>deployment - <a href="https://render.com" target="_blank">Render</a></h2>
         <h2>2021</h2>
       </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore7" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <h1>My role</h1>
+          <hr class="lightHr">
+
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Individual and independent work using WordPress and various plugins </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <hr>
-    <div class="container">
-      <a href="https://galanlaurag.github.io" target="_blank" class="clickable"><img src="img/universe.png"></a>
+    <div class="projectContainer expandMoreContent" id="showMore8">
+      <a href="https://galanlaurag.github.io" target="_blank"><img class="portfolioLogo" src="img/universe.png" alt="Universe Game Logo"></a>
       <div class="info">
-        <h1><a href="https://galanlaurag.github.io" target="_blank" class="clickable">Text-based game - galanlaurag.github.io</a></h1>
+        <h1><a href="https://galanlaurag.github.io" target="_blank">Text-based game - galanlaurag.github.io</a></h1>
         <h2>design & development - HTML, CSS, JavaScript</h2>
         <h2>deployment - <a href="https://github.com" target="_blank">Github</a></h2>
         <h2>2021</h2>
       </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore8" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <h1>My role</h1>
+          <hr class="lightHr">
+
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Individual and independent work using WordPress and various plugins </li>
+          </ul>
+        </div>
+      </div>
     </div>
     <hr>
-    <div class="container">
-      <a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank" class="clickable"><img src="img/earth.png"></a>
+    <div class="projectContainer expandMoreContent" id="showMore9">
+      <a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank"><img class="portfolioLogo" src="img/earth.png" alt="RecyQuiz Logo"></a>
       <div class="info">
-        <h1><a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank" class="clickable">RecyQuiz prototype App</a></h1>
-        <h2>design & functionality - Axure</h2>
+        <h1><a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank">RecyQuiz prototype App</a></h1>
+        <h2>design & functionality - <a href="https://www.axure.com" target="_blank">Axure</a></h2>
         <h2>deployment - <a href="https://www.axure.com" target="_blank">Axure</a></h2>
         <h2>2020</h2>
+      </div>
+      <div class="expandMore">
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore9" class="button clickable btnExpandMore">Read more</button>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <h1>My role</h1>
+          <hr class="lightHr">
+
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>Individual and independent work using WordPress and various plugins </li>
+          </ul>
+        </div>
       </div>
     </div>
   </main>
 
   <footer class="footer">
     <div class="footerlinks">
-      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/linkedin.png" class="iconfooter">Linkedin</a>
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/linkedin.png" class="iconfooter" alt="LinkedIn Logo">Linkedin</a>
     </div>
     <div class="mobilefooterlinks">
-      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/wlinkedin.png" class="iconfooter"></a>
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/wlinkedin.png" class="iconfooter" alt="LinkedIn Logo"></a>
     </div>
-    <p class="copyright">Copyright © 2022 by <a href="https://galanlaura.com/"><img src="img/logo.png" class="logofooter"></a></p>
+    <p class="copyright">Copyright © 2022 by <a href="https://galanlaura.com/"><img src="img/logo.png" class="logofooter" alt="Logo"></a></p>
   </footer>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
