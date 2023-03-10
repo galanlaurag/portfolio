@@ -14,6 +14,12 @@
   <title>Laura Galan - contact</title>
 
   <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    /*.grecaptcha-badge {*/
+    /*  bottom: 5em !important;*/
+    /*  z-index: 20;*/
+    /*}*/
+  </style>
 </head>
 <body>
   <header>
@@ -34,18 +40,114 @@
   <main>
     <section class="contactlinks">
       <h1>Contact me:</h1>
-      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="contactlink linkedin clickable" target="_blank"><img src="img/linkedin.png" class="icon" alt="LinkedIn Logo">Linkedin</a>
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="contactlink linkedin clickable" target="_blank"><img src="img/wlinkedin.png" class="icon" alt="LinkedIn Logo">Linkedin</a>
     </section>
+
+    <!-- working contact form but with captcha on separate page -->
+      <!--    <section id="contactForm">-->
+      <!--      <form id="contact" action="https://formsubmit.co/contact@galanlaura.com" method="POST">-->
+      <!--        <input type="hidden" name="_subject" value="New email from contact form">-->
+      <!--&lt;!&ndash;        <input type="hidden" name="_captcha" value="false">&ndash;&gt;-->
+      <!--        <input type="hidden" name="_next" value="#thanks">-->
+      <!--        <input type="text" name="name" placeholder="Name" required>-->
+      <!--        <input type="email" name="email" placeholder="Email address" required>-->
+      <!--        <textarea rows="4" cols="50" name="Message" placeholder="Your message..." required></textarea>-->
+      <!--        <button type="submit">Send</button>-->
+      <!--      </form>-->
+      <!--    </section>-->
+
+    <!-- contact form but with thank you message on separate page -->
+      <!--    <form action="https://getform.io/f/39eba9cd-95e1-4b1d-8ecc-50f16f16a120" onsubmit="return false" method="POST">-->
+      <!--      <input type="text" id="name" name="name" placeholder="Name" required>-->
+      <!--      <input type="email" id="email" name="email" placeholder="Email address" required>-->
+      <!--      <textarea id="message" rows="4" cols="50" name="Message" placeholder="Your message..." required></textarea>-->
+      <!--      <input type="hidden" id="captchaResponse" name="g-recaptcha-response" style="position: absolute; z-index: 15;" />-->
+      <!--      <button type="submit">Send</button>-->
+      <!--    </form>-->
+
+    <iframe name="hiddenFrame" width="0" height="0" style="display: none; border: none;"></iframe>
+    <form action="sendEmail.php" name="contactForm" id="contactForm" method="POST" target="hiddenFrame" style="text-align: center;">
+      <div class="form-field">
+        <label for="contactName">Name:</label>
+        <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required />
+      </div>
+      <div class="form-field">
+        <label for="contactEmail">Email:</label>
+        <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required />
+      </div>
+      <div class="form-field">
+        <label for="contactMessage">Message:</label>
+        <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="10" cols="50" minlength="20" required></textarea>
+      </div>
+      <!-- captcha -->
+      <div id='recaptcha' class="g-recaptcha" data-sitekey="6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq" data-callback="onCompleted" data-size="invisible"></div>
+      <div class="form-field">
+        <button class="button stroke submitform">Send</button>
+      </div>
+    </form>
+    <!-- contact-success -->
+    <div id="message-success" style="display: none; text-align: center;">
+      <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+    </div>
+
   </main>
 
   <footer class="footer">
     <div class="footerlinks">
-      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/linkedin.png" class="iconfooter" alt="LinkedIn Logo">Linkedin</a>
+      <a href="https://github.com/galanlaurag" class="clickable" target="_blank"><img src="img/github.png" class="iconfooter" alt="GitHub Logo">GitHub</a>
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable" target="_blank"><img src="img/linkedin.png" class="iconfooter" alt="LinkedIn Logo">Linkedin</a>
     </div>
     <div class="mobilefooterlinks">
-      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable"><img src="img/wlinkedin.png" class="iconfooter" alt="LinkedIn Logo"></a>
+      <a href="https://github.com/galanlaurag" class="clickable" target="_blank"><img src="img/github.png" class="iconfooter" alt="GitHub Logo"></a>
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable" target="_blank"><img src="img/linkedin.png" class="iconfooter" alt="LinkedIn Logo"></a>
     </div>
-    <p class="copyright">Copyright © 2022 by <a href="https://galanlaura.com/"><img src="img/logo.png" class="logofooter" alt="Logo"></a></p>
+    <p class="copyright">Copyright © 2023 by <a href="https://galanlaura.com/"><img src="img/logo.png" class="logofooter" alt="Logo"></a></p>
   </footer>
+
+  <!-- working contact form but with captcha on separate page -->
+    <!--  <script src="https://www.google.com/recaptcha/api.js"></script>-->
+    <!--  <script>-->
+    <!--    function captchaSubmit(data) {-->
+    <!--      document.getElementById("contact").submit();-->
+    <!--    }-->
+    <!--  </script>-->
+
+  <!-- contact form but with thank you message on separate page -->
+    <!--  <script src="https://www.google.com/recaptcha/api.js?render=6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq"></script>-->
+    <!--  <script>-->
+    <!--    grecaptcha.ready(function() {-->
+    <!--      grecaptcha.execute("6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq", {action: "homepage"})-->
+    <!--              .then(function(token) {-->
+    <!--                document.getElementById('captchaResponse').value = token;-->
+    <!--              });-->
+    <!--    });-->
+    <!--  </script>-->
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script>
+    var form = document.getElementById("contactForm")
+    form.addEventListener("submit", function(event) {
+      console.log('form submitted.');
+      if (!grecaptcha.getResponse()) {
+        console.log('captcha not yet completed.');
+        event.preventDefault(); //prevent form submit
+        grecaptcha.execute();
+      } else {
+        console.log('form really submitted.');
+      }
+    });
+    onCompleted = function() {
+      console.log('captcha completed.');
+      form.submit();
+      form.reset();
+      document.getElementById("message-success").style.display = "block";
+    }
+  </script>
+<!--  <style>-->
+<!--    .grecaptcha-badge {-->
+<!--      bottom: 5em !important;-->
+<!--      z-index: 20;-->
+<!--    }-->
+<!--  </style>-->
 </body>
 </html>

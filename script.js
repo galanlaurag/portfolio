@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function expand() {
         const showContent = document.getElementById(this.dataset.target);
         if(showContent.classList.contains("expand-active")) {
-            this.innerHTML = this.dataset.showtext;
+            this.innerHTML = this.dataset.showtext + " <i class=\"fa-solid fa-chevron-down\"></i>";
             // showContent.scrollIntoView({
             //     block: 'start',
             //     behavior: 'smooth',
             //     inline: 'center'
             // });
         } else {
-            this.innerHTML = this.dataset.hidetext;
+            this.innerHTML = this.dataset.hidetext + " <i class=\"fa-solid fa-chevron-up\"></i>";
         }
         showContent.classList.toggle("expand-active");
     }
