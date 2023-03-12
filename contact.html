@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" style="overflow: hidden;">
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,7 @@
     /*}*/
   </style>
 </head>
-<body>
+<body style="overflow: hidden;">
   <header>
     <nav class="menu">
       <a href="index.html" class="clickable">
@@ -89,8 +89,6 @@
           <span>Message *</span>
           <textarea class="input" name="contactMessage" id="contactMessage" rows="10" cols="50" minlength="20" required></textarea>
         </div>
-        <!-- captcha -->
-        <div id='recaptcha' class="g-recaptcha animate__animated animate__fadeIn" style="animation-delay: 0.4s;" data-sitekey="6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq" data-callback="onCompleted" data-size="invisible"></div>
         <div class="form-field">
           <button class="button stroke submitform clickable animate__animated animate__fadeIn">Send</button>
         </div>
@@ -100,6 +98,9 @@
         <i class="fa fa-check"></i>Your message was sent, thank you!<br />
       </div>
     </section>
+
+    <!-- captcha -->
+    <div id='recaptcha' class="g-recaptcha animate__animated animate__fadeIn" style="animation-delay: 0.4s;" data-sitekey="6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq" data-callback="onCompleted" data-size="invisible"></div>
 
   </main>
 
@@ -172,6 +173,13 @@
       input.addEventListener("focus", focusFunc);
       input.addEventListener("blur", blurFunc);
     });
+
+    // jQuery(document).ready(function() {
+    //   $('.grecaptcha-badge').appendTo("body"); //fix recaptcha positioning to body
+    // });
+    // $.initialize(".grecaptcha-badge", function() {
+    //   $(this).appendTo("body"); //fix recaptcha positioning to body, even if it loads after the page
+    // });
   </script>
 </body>
 </html>

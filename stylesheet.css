@@ -36,7 +36,7 @@ header, footer {
   background-color: var(--dark);
 }
 header{
-  height: 4.5em;
+  height: 4.5rem;
 }
 header a, footer a{
   color: #fff;
@@ -105,6 +105,7 @@ nav {
 }
 /* navlist */
 .menulist {
+  animation-duration: 0s;
   float: right;
   margin: 0;
 }
@@ -132,7 +133,7 @@ nav {
 
 /* index */
 #indexMain {
-  height: calc(100vh - 4.5em);;
+  height: calc(100vh - 4.5rem);;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -225,7 +226,7 @@ nav {
   width: 7em;
   height: 7em;
   top: 3em;
-  right: 2em;
+  right: 8em;
 }
 .circle.three {
   width: 14em;
@@ -318,12 +319,12 @@ nav {
   text-align: end;
 }
 .projectContainer .portfolioLogo {
-  height: 8em;
+  height: 9rem;
   margin: auto;
   padding: 0.5rem;
 }
 .projectContainer .info{
-  width: 70%;
+  width: 80%;
   text-align: left;
   padding: 0 2em;
   top: 0;
@@ -424,6 +425,7 @@ nav {
   box-shadow: 0 3px 3px var(--shadow);
   color: #000;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .btnExpandMore:hover {
   color: #000;
@@ -452,6 +454,7 @@ nav {
   box-shadow: 0 3px 3px var(--shadow);
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navButton:hover {
   color: #000;
@@ -466,7 +469,7 @@ nav {
 
 /* contact */
 .grecaptcha-badge {
-  bottom: 5.5em !important;
+  margin-bottom: 5em;
   z-index: 20;
 }
 /*contact form*/
@@ -487,6 +490,7 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 #formContainer h1 {
   margin: 0;
@@ -693,13 +697,7 @@ footer a.clickable{
     width: 90%;
   }
   .projectContainer .portfolioLogo {
-    height: 7em;
-  }
-  .projectContainer a {
-    width: 15%;
-  }
-  .projectContainer .info{
-    width: 75%;
+    height: 8.5rem;
   }
   .carousel-indicators {
     margin-bottom: 3rem;
@@ -710,6 +708,9 @@ footer a.clickable{
   }
   #formContainer {
     width: 80%;
+  }
+  .grecaptcha-badge {
+    margin-bottom: 4em;
   }
   /* about */
   .aboutMe, .mySkills, .about, .techskills, .perskills, .interests {
@@ -798,7 +799,9 @@ footer a.clickable{
     background-color: var(--dark);
     padding: 0;
   }
+
   .menulist{
+    animation-duration: 0.8s;
     display: none;
     width: 100%;
     text-align: right;
@@ -819,13 +822,14 @@ footer a.clickable{
   .general{
     width: 95%;
     padding: 0 1em;
+    margin: 1em auto;
   }
   .me{
     height: 15em;
     display: inline-flex;
-    /*margin: 3em 0 0 0;*/
   }
   .buttons{
+    display: none;
     display: none;
   }
   .buttonsmobile{
@@ -833,13 +837,14 @@ footer a.clickable{
     margin: 0 auto;
     display: block;
     text-align: center;
-    padding-bottom: 1em;
   }
   .buttonsmobile .button{
     margin: 0.5em;
+    padding: 0.5em 1em !important;
   }
   .rest{
-    padding: 2em 0.5em;
+    padding: 1em 0.5em;
+    margin-bottom: 2em;
   }
   .rest img{
     height: 5.5em;
@@ -848,13 +853,13 @@ footer a.clickable{
   /* portfolio */
   #navButtons {
     padding: 0.5rem 0;
-    letter-spacing: -4px;
+    letter-spacing: -2px;
   }
   .portfolioTitle, .projectContainer {
     width: 95%;
   }
   .projectContainer .portfolioLogo{
-    height: 6em;
+    height: 8rem;
   }
   .projectContainer h1, .projectContainer h3{
     font-size: 1.1em;
@@ -883,8 +888,11 @@ footer a.clickable{
   }
   #formContainer {
     width: 90%;
-    padding: 1rem 1.5rem;
-    height: 65%;
+    padding: 0.5rem 1.5rem;
+    height: fit-content;
+  }
+  .textarea {
+    margin-bottom: 0.2rem !important;
   }
   .input-container {
     margin: 1rem 0;
@@ -945,9 +953,12 @@ footer a.clickable{
     width: 75%;
     font-size: 1.1em;
   }
+  .input-container {
+    width: 100%;
+  }
   /* portfolio */
   .projectContainer .portfolioLogo {
-    height: 5em;
+    height: 7.5rem;
   }
   .projectContainer h1, .projectContainer h3{
     font-size: 0.85em;
@@ -1021,7 +1032,7 @@ footer a.clickable{
   }
   /* portfolio */
   .projectContainer .portfolioLogo {
-    height: 4em;
+    height: 7em;
   }
   .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a{
     font-size: 0.8rem;
@@ -1082,9 +1093,6 @@ footer a.clickable{
     font-size: 1em;
   }
   /* portfolio */
-  .projectContainer .portfolioLogo {
-    height: 4em;
-  }
   .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a {
     font-size: 0.8rem;
   }
