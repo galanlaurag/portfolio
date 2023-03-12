@@ -19,7 +19,7 @@
 
   <link rel="stylesheet" href="stylesheet.css">
 </head>
-<body>
+<body style="overflow-y: visible;">
   <header>
     <nav class="menu">
       <a href="index.html" class="clickable">
@@ -451,7 +451,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script>
-  <!-- expanding -->
+  //expanding
     document.addEventListener('DOMContentLoaded', () => {
       const expandsMore = document.querySelectorAll('[expand-more]');
 
@@ -470,7 +470,6 @@
         expandMore.addEventListener("click", expand);
       });
     })
-
   //change navButtons height depending on footer visible height
   //source: https://stackoverflow.com/questions/24768795/get-the-visible-height-of-a-div-with-jquery
   function inViewport($el) {
@@ -479,9 +478,9 @@
             r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
     return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
   }
-  $(window).on("scroll resize", function(){
+    $("body").on("scroll resize", function(){
     $("#navButtons").css("height", "calc(100% - 4.5em - " + inViewport($('.footer')) + "px)");
-  });
+    });
   </script>
 </body>
 </html>
