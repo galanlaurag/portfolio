@@ -13,10 +13,9 @@
 
   <title>Laura Galan - portfolio</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
-
 
   <link rel="stylesheet" href="stylesheet.css">
 </head>
@@ -38,14 +37,13 @@
 
 
   <div id="navButtons">
-    <a class="navButton" href="#professional">Professional</a>
-    <a class="navButton" href="#personal">Personal</a>
-    <a class="navButton" href="#uni">University</a>
+    <a class="navButton clickable animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;" href="#professional">Professional</a>
+    <a class="navButton clickable animate__animated animate__fadeInLeft" style="animation-delay: 0.6s;" href="#personal">Personal</a>
+    <a class="navButton clickable animate__animated animate__fadeInLeft" style="animation-delay: 0.8s;" href="#uni">University</a>
   </div>
   <main id="portfolioMain">
     <h1 id="professional" class="portfolioTitle">Professional projects I collaborated</h1>
-    <hr>
-    <div class="projectContainer expandMoreContent" id="showMore1">
+    <div class="projectContainer" id="showMore1">
       <a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank" class="clickable"><img class="portfolioLogo" src="img/librate.png" alt="Librate Logo"></a>
       <div class="info">
         <h1><a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank">Librate - legal dashboard of information</a></h1>
@@ -54,7 +52,7 @@
         <h2>2023</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore1" class="button btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore1" class="button clickable btnExpandMore animate__animated animate__fadeIn">Read more <i class="fa-solid fa-chevron-down"></i></button>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -71,7 +69,7 @@
           </ul>
 
           <!--carousell-->
-          <div class="projectContainer fluid">
+          <div class="fluid">
             <div id="librateImages" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel" style="width:85%;margin:auto">
               <!-- Indicators -->
               <div class="carousel-indicators">
@@ -127,7 +125,7 @@
       </div>
     </div>
     <hr>
-    <div class="projectContainer expandMoreContent" id="showMore2">
+    <div class="projectContainer" id="showMore2">
       <a href="https://arctaurusjonty.pythonanywhere.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/nearestneighbour.png" alt="Nearest Neighbour Logo"></a>
       <div class="info">
         <h1><a href="https://arctaurusjonty.pythonanywhere.com" target="_blank">Nearest Neighbour - World Data Visualisation Contest</a></h1>
@@ -136,7 +134,7 @@
         <h2>2023</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore2" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore2" class="button clickable btnExpandMore animate__animated animate__fadeIn" style="animation-delay: 0.2s;">Read more <i class="fa-solid fa-chevron-down"></i></button>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -157,7 +155,7 @@
       </div>
     </div>
     <hr>
-    <div class="projectContainer expandMoreContent" id="showMore3">
+    <div class="projectContainer projectContainerLong" id="showMore3">
       <a href="https://arctaurus.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/arctaurus.png" alt="ArcTaurus Logo"></a>
       <div class="info">
         <h1><a href="https://arctaurus.com" target="_blank">ArcTaurus - no-code automated crypto trading bots</a></h1>
@@ -186,7 +184,7 @@
           </ul>
 
           <!--carousell-->
-          <div class="projectContainer fluid">
+          <div class="fluid">
             <div id="arctaurusImages" class="carousel slide" data-bs-interval="false" data-bs-ride="carousel" style="width:85%;margin:auto">
               <!-- Indicators -->
               <div class="carousel-indicators">
@@ -257,8 +255,7 @@
 
     <br><br>
     <h1 id="personal" class="portfolioTitle">Personal projects</h1>
-    <hr>
-    <div class="projectContainer expandMoreContent" id="showMore4">
+    <div class="projectContainer" id="showMore4">
       <a href="https://kocisklep.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/kocisklep.png" alt="KociSklep Logo"></a>
       <div class="info">
         <h1><a href="https://kocisklep.com" target="_blank">Kocisklep - e-commerce store</a></h1>
@@ -290,7 +287,7 @@
       </div>
     </div>
     <hr>
-    <div class="projectContainer expandMoreContent" id="showMore5">
+    <div class="projectContainer" id="showMore5">
       <a href="https://kociocia.pl" target="_blank" class="clickable"><img class="portfolioLogo" src="img/kociocia.png" alt="Kociocia Logo"></a>
       <div class="info">
         <h1><a href="https://kociocia.pl" target="_blank">Kociocia - personal website & appointment booking system</a></h1>
@@ -324,11 +321,10 @@
     </div>
     <br><br>
     <h1 id="uni" class="portfolioTitle">University projects</h1>
-    <hr>
-    <div class="projectContainer expandMoreContent" id="showMore6">
-      <a href="https://glowcafe.onrender.com" target="_blank"><img class="portfolioLogo" src="img/glow.png" alt="Glow Logo"></a>
+    <div class="projectContainer" id="showMore6">
+      <a href="https://glowcafe.onrender.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/glow.png" alt="Glow Logo"></a>
       <div class="info">
-        <h1><a href="https://growcafe.onrender.com" target="_blank">Glow Café - redesigned version of Grow Café</a></h1>
+        <h1><a href="https://glowcafe.onrender.com" target="_blank">Glow Café - redesigned version of Grow Café</a></h1>
         <h2>design & development - Python, HTML, CSS, JavaScript</h2>
         <h2>deployment - <a href="https://render.com" target="_blank">Render</a></h2>
         <h2>2023</h2>
@@ -354,8 +350,8 @@
       </div>
     </div>
     <hr>
-    <div class="projectContainer expandMoreContent" id="showMore7">
-      <a href="https://growcafe.onrender.com" target="_blank"><img class="portfolioLogo" src="img/grow.png" alt="Grow Logo"></a>
+    <div class="projectContainer" id="showMore7">
+      <a href="https://growcafe.onrender.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/grow.png" alt="Grow Logo"></a>
       <div class="info">
         <h1><a href="https://growcafe.onrender.com" target="_blank">Grow Café - fictional restaurant website</a></h1>
         <h2>design & development - Python, HTML, CSS, JavaScript</h2>
@@ -381,8 +377,8 @@
       </div>
     </div>
     <hr>
-    <div class="projectContainer expandMoreContent" id="showMore8">
-      <a href="https://galanlaurag.github.io" target="_blank"><img class="portfolioLogo" src="img/universe.png" alt="Universe Game Logo"></a>
+    <div class="projectContainer" id="showMore8">
+      <a href="https://galanlaurag.github.io" target="_blank" class="clickable"><img class="portfolioLogo" src="img/universe.png" alt="Universe Game Logo"></a>
       <div class="info">
         <h1><a href="https://galanlaurag.github.io" target="_blank">Text-based adventure game</a></h1>
         <h2>design & development - HTML, CSS, JavaScript</h2>
@@ -408,7 +404,7 @@
       </div>
     </div>
 <!--    <hr>-->
-<!--    <div class="projectContainer expandMoreContent" id="showMore9">-->
+<!--    <div class="projectContainer" id="showMore9">-->
 <!--      <a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank"><img class="portfolioLogo" src="img/earth.png" alt="RecyQuiz Logo"></a>-->
 <!--      <div class="info">-->
 <!--        <h1><a href="https://snxxtp.axshare.com/#id=fth0h8&p=home" target="_blank">RecyQuiz prototype App</a></h1>-->
@@ -437,7 +433,7 @@
   <footer class="footer">
     <div class="footerlinks">
       <a href="https://github.com/galanlaurag" class="clickable" target="_blank"><img src="img/github.png" class="iconfooter" alt="GitHub Logo">GitHub</a>
-      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable" target="_blank"><img src="img/linkedin.png" class="iconfooter" alt="LinkedIn Logo">Linkedin</a>
+      <a href="https://www.linkedin.com/in/laura-galan-3801841a3/" class="clickable" target="_blank"><img src="img/linkedin.png" class="iconfooter" alt="LinkedIn Logo">LinkedIn</a>
     </div>
     <div class="mobilefooterlinks">
       <a href="https://github.com/galanlaurag" class="clickable" target="_blank"><img src="img/github.png" class="iconfooter" alt="GitHub Logo"></a>
@@ -445,10 +441,40 @@
     </div>
     <p class="copyright">Copyright © 2023 by <a href="https://galanlaura.com/"><img src="img/logo.png" class="logofooter" alt="Logo"></a></p>
   </footer>
-  <script src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+  <!-- expanding -->
+    document.addEventListener('DOMContentLoaded', () => {
+      const expandsMore = document.querySelectorAll('[expand-more]');
 
+      function expand() {
+        const showContent = document.getElementById(this.dataset.target);
+        if(showContent.classList.contains("expand-active")) {
+          this.innerHTML = this.dataset.showtext + " <i class=\"fa-solid fa-chevron-down\"></i>";
+          window.scrollTo(showContent.id.offsetTop);
+        } else {
+          this.innerHTML = this.dataset.hidetext + " <i class=\"fa-solid fa-chevron-up\"></i>";
+        }
+        showContent.classList.toggle("expand-active");
+      }
 
+      expandsMore.forEach(expandMore => {
+        expandMore.addEventListener("click", expand);
+      });
+    })
+
+  //change navButtons height depending on footer visible height
+  //source: https://stackoverflow.com/questions/24768795/get-the-visible-height-of-a-div-with-jquery
+  function inViewport($el) {
+    var elH = $el.outerHeight(),
+            H   = $(window).height(),
+            r   = $el[0].getBoundingClientRect(), t=r.top, b=r.bottom;
+    return Math.max(0, t>0? Math.min(elH, H-t) : Math.min(b, H));
+  }
+  $(window).on("scroll resize", function(){
+    $("#navButtons").css("height", "calc(100% - 4.5em - " + inViewport($('.footer')) + "px)");
+  });
+  </script>
 </body>
 </html>
