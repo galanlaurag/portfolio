@@ -1038,7 +1038,7 @@ footer a.clickable{
   .projectContainer .portfolioLogo {
     height: 7em;
   }
-  .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a{
+  .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a, .projectContainer h2 a{
     font-size: 0.8rem;
   }
   #video {
@@ -1095,9 +1095,5 @@ footer a.clickable{
   .contactlink{
     width: 95%;
     font-size: 1em;
-  }
-  /* portfolio */
-  .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a {
-    font-size: 0.8rem;
   }
 }
