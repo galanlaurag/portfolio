@@ -449,23 +449,26 @@ nav {
   justify-content: space-between;
   padding: 1rem 0;
   z-index: 50;
-  letter-spacing: -2px;
+  letter-spacing: 4px;
 }
 .navButton {
+  /*writing-mode: vertical-rl;*/
+  /*text-orientation: upright;*/
   writing-mode: vertical-rl;
-  text-orientation: upright;
+  transform:scale(-1);
   text-decoration: none;
   padding: 0.7rem 0.5rem;
   margin: 0;
   font-size: 1rem;
   background-color: var(--lightest);
-  box-shadow: 0 3px 3px var(--shadow);
+  box-shadow: 0 -3px 3px var(--shadow);
   border-radius: 10px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 .navButton:hover {
   color: #000;
+  transform:scale(-1.05) !important;
 }
 #professional, #personal, #uni {
   scroll-margin-top: 5rem;
@@ -747,10 +750,13 @@ footer a.clickable{
   h1 {
     font-size: 1.9em;
   }
+  /*portfolio*/
   #portfolioMain {
     padding-left: 1rem;
   }
-  /*portfolio*/
+  .navButton {
+    padding: 0.7rem 2px;
+  }
   #arctaurusImages {
     width: 90% !important;
   }
@@ -859,8 +865,8 @@ footer a.clickable{
   }
   /* portfolio */
   #navButtons {
-    padding: 0.5rem 0;
-    letter-spacing: -2px;
+    padding: 0.5rem 2px;
+    /*letter-spacing: 4px;*/
   }
   .portfolioTitle, .projectContainer {
     width: 95%;
@@ -974,7 +980,7 @@ footer a.clickable{
     margin-bottom: 2.5rem;
   }
   .navButton {
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 2px;
   }
   /* footer */
   .footerlinks{
