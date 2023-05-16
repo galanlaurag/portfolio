@@ -559,6 +559,17 @@
     $("body").on("scroll resize", function(){
     $("#navButtons").css("height", "calc(100% - 4.5em - " + inViewport($('.footer')) + "px)");
     });
+
+    //smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
   </script>
 </body>
 </html>
