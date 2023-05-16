@@ -346,10 +346,20 @@ nav {
 #video {
   width: 30%;
 }
-#bookingImg {
+#bookingImg, #editingImg {
   width: 80%;
   margin: 1rem;
   border-right: 5px;
+}
+.seeExpandButtons {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.seeExpandButtons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: inherit;
 }
 
 /*carousel*/

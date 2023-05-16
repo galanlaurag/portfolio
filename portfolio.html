@@ -48,6 +48,63 @@
     <span class="circle eleven"></span>
     <span class="circle twelve"></span>
 
+    <h1 id="honours" class="portfolioTitle">Honours Project</h1>
+    <div class="projectContainer" id="showMore">
+      <a href="https://customisie.pl" target="_blank" class="clickable"><img class="portfolioLogo" src="img/customisie.png" alt="Customisie Logo"></a>
+      <div class="info">
+        <h1><a href="https://customisie.pl" target="_blank">Customisie - customise your teddy bear</a></h1>
+        <h2>design & development - <a href="https://www.figma.com" target="_blank">Figma</a>, <a href="https://react.dev" target="_blank">React.js</a>, <a href="https://nodejs.org" target="_blank">Node.js</a>, <a href="https://www.mongodb.com" target="_blank">MongoDB</a>, <a href="https://redux.js.org" target="_blank">Redux</a>, <a href="https://stripe.com/gb" target="_blank">Stripe</a></h2>
+        <h2>deployment - <a href="https://www.hostinger.pl" target="_blank">Hostinger</a>, <a href="https://render.com" target="_blank">Render</a></h2>
+        <h2>2023</h2>
+      </div>
+      <div class="expandMore">
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://www.customisie.pl" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+        <div class="expandedContent">
+          <h1>Overview</h1>
+          <hr class="lightHr">
+          <span>This project was created as part of my bachelor's degree Honours Project. It is a <b>demo version</b> of an interactive e-commerce website that sells <b>visually customisable handmade crochet teddy bears</b>.<br>
+            The main focus was on designing and developing a modern, visually attractive, intuitive, and user-friendly <b>customisation system</b>.<br>
+            The entire website was <b>hand-coded from scratch</b>.</span>
+          <h1>Project description</h1>
+          <hr class="lightHr">
+          <span>
+            In the initial stage of the project, a general concept for the customization system was defined based on research and existing solutions used by companies.<br><br>
+            Regarding the website's design, <b>2 static prototypes in 3 colour schemes</b> were created using <a href="https://www.figma.com" target="_blank">Figma</a> - an <a href="https://www.figma.com/proto/5hZJlBI4cEgIbbwlQfEQOl/Prototype---arrows?type=design&node-id=1-415&scaling=scale-down&page-id=0%3A1" target="_blank">arrow-based</a> and <a href="https://www.figma.com/proto/cfLeIflBO81wgvig4ixUYP/Prototype---dropdown?type=design&scaling=scale-down&page-id=0%3A1&node-id=1-749" target="_blank">dropdown-based</a>.<br>
+            Based on the research results, the arrow-based design in the first colour scheme was implemented using <b>MERN Stack</b> - <b>MongoDB</b> database, <b>Express.js</b> framework, <b>React.js</b> library, and <b>Node.js</b> JavaScript environment.<br>
+            Cart functionality was implemented using <b>Redux</b>, with the <b>Stripe</b> test paying system integrated.<br><br>
+
+            The lack of prior experience with the toolset posed several <b>challenges</b> during the development stage of the project, including:<br>
+            <ul>
+              <li><b>Teddy bear images</b> used in the customisation system.<br>
+                This stage of the project was particularly time-consuming and repetitive. To achieve the final result, the <b>background was deleted</b> from the photos, <b>each body part was separated</b>, and <b>multiple colour versions were manually created</b> for all of them.</li>
+              <img id="editingImg" src="img/editingProcess.png" alt="Process of editing each image of a teddy bear">
+              <li><b>Cart functionality</b> – adding, increasing, decreasing, and deleting the correct product in the cart.<br>
+                Since there is only <b>one product with the same id</b>, the identifier needed to be based on all the selections so that the <b>correct teddy bear’s quantity</b> would change when there are multiple versions of the product in the cart.</li>
+              <li><b>On-click functionality</b> to change the colours of a teddy bear.<br>
+                The initially planned on-click functionality was not functional due to its <b>dependency on the z-index</b> of images, as all the body part images were in <b>PNG format with the same size</b>.<br>
+                After an unsuccessful attempt of using HTML Image Maps, an <b>alternative solution</b> was implemented - separate buttons allowing the change of colours for specific body parts.</li>
+              <li><b>Deploying the Node.js API</b> using a planned hosting provider.<br>
+                The selected hosting provider - Hostinger - <b>does not offer support for Node.js</b> on a regular plan. Therefore, the front-end of the website was deployed using Hostinger, while the API was deployed using free cloud hosting - Render.</li>
+            </ul><br>
+
+            The outcome of the project consists of a <b>fully functional customisation system</b>, homepage, cart page, about page, login/registering pages, and contact page with a <b>ReCaptcha-protected contact form</b>.<br>
+            It also includes some major elements of an e-commerce store, such as <b>cart functionality</b>, a <b>logging/registering feature</b>, and a <b>test version of a paying system</b>.
+          </span>
+          <h1>Learning outcomes</h1>
+          <hr class="lightHr">
+          <ul>
+            <li>First experience working with new tools such as React.js, Node.js, MongoDB</li>
+            <li>First experience creating and deploying an API</li>
+            <li>Problem-solving, project management, and time organisation</li>
+            <li>Independent research and evaluation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
     <h1 id="professional" class="portfolioTitle">Professional projects I collaborated</h1>
     <div class="projectContainer" id="showMore1">
@@ -59,7 +116,10 @@
         <h2>2023</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore1" class="button clickable btnExpandMore animate__animated animate__fadeIn">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://www.figma.com/proto/g7MaMLcc5Cg5aVNGBSJukQ/Librate---Polished?kind=&node-id=44-7033&page-id=0%3A1&scaling=scale-down&starting-point-node-id=44%3A7033" target="_blank">See the prototype</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore1" class="button clickable btnExpandMore animate__animated animate__fadeIn">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -141,7 +201,10 @@
         <h2>2023</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore2" class="button clickable btnExpandMore animate__animated animate__fadeIn" style="animation-delay: 0.2s;">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://arctaurusjonty.pythonanywhere.com" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore2" class="button clickable btnExpandMore animate__animated animate__fadeIn" style="animation-delay: 0.2s;">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -163,9 +226,9 @@
     </div>
     <hr>
     <div class="projectContainer projectContainerLong" id="showMore3">
-      <a href="https://arctaurus.com" target="_blank" class="clickable"><img class="portfolioLogo" src="img/arctaurus.png" alt="ArcTaurus Logo"></a>
+      <a><img class="portfolioLogo" src="img/arctaurus.png" alt="ArcTaurus Logo"></a>
       <div class="info">
-        <h1><a href="https://arctaurus.com" target="_blank">ArcTaurus - no-code automated crypto trading bots</a></h1>
+        <h1><a>ArcTaurus - no-code automated crypto trading bots</a></h1>
         <h2>design & development - PHP, CSS, JavaScript, <a href="https://developers.google.com/blockly" target="_blank">Blockly library</a></h2>
         <h2>The website is currently inactive - the video showcases the functionality of the system</h2>
         <h2>2022</h2>
@@ -271,7 +334,10 @@
         <h2>2022</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore4" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://kocisklep.com" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore4" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -303,7 +369,10 @@
         <h2>2022</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore5" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://kociocia.pl" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore5" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -337,7 +406,10 @@
         <h2>2023</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore6" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://glowcafe.onrender.com" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore6" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -366,7 +438,10 @@
         <h2>2022</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore7" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://growcafe.onrender.com" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore7" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
@@ -393,7 +468,10 @@
         <h2>2021</h2>
       </div>
       <div class="expandMore">
-        <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore8" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        <div class="seeExpandButtons">
+          <button class="button clickable animate__animated animate__fadeIn"><a href="https://galanlaurag.github.io" target="_blank">See the website</a></button>
+          <button expand-more data-hidetext="Hide" data-showtext="Read more" data-target="showMore8" class="button clickable btnExpandMore">Read more <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
         <div class="expandedContent">
           <h1>Overview</h1>
           <hr class="lightHr">
