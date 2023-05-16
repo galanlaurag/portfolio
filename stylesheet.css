@@ -30,13 +30,14 @@ html{
 body{
   background-color: var(--light);
   min-height: 100%;
+  height: 100vh;
   position: relative;
 }
 header, footer {
   background-color: var(--dark);
 }
 header{
-  height: 4.5em;
+  height: 4.5rem;
 }
 header a, footer a{
   color: #fff;
@@ -105,6 +106,7 @@ nav {
 }
 /* navlist */
 .menulist {
+  animation-duration: 0s;
   float: right;
   margin: 0;
 }
@@ -132,7 +134,7 @@ nav {
 
 /* index */
 #indexMain {
-  height: calc(100vh - 4.5em);;
+  height: calc(100vh - 4.5rem);;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -214,6 +216,12 @@ nav {
   bottom: 0;
   right: 75%;
 }
+#aboutMeMain .circle.zero {
+  top: 80em;
+}
+#portfolioMain .circle.zero {
+  top: 135em;
+}
 .circle.one {
   width: 9em;
   height: 9em;
@@ -225,7 +233,7 @@ nav {
   width: 7em;
   height: 7em;
   top: 3em;
-  right: 2em;
+  right: 8em;
 }
 .circle.three {
   width: 14em;
@@ -252,6 +260,9 @@ nav {
   bottom: 30em;
   right: 2em;
   background: linear-gradient(135deg, transparent 20%, var(--accent));
+}
+#aboutMeMain .circle.six, #portfolioMain .circle.six  {
+  top: 110em;
 }
 .circle.seven {
   width: 18em;
@@ -292,8 +303,6 @@ nav {
   left: 10em;
 }
 
-
-
 /* portfolio */
 .portfolioTitle {
   text-align: left;
@@ -318,12 +327,12 @@ nav {
   text-align: end;
 }
 .projectContainer .portfolioLogo {
-  height: 8em;
+  height: 9rem;
   margin: auto;
   padding: 0.5rem;
 }
 .projectContainer .info{
-  width: 70%;
+  width: 80%;
   text-align: left;
   padding: 0 2em;
   top: 0;
@@ -434,6 +443,7 @@ nav {
   box-shadow: 0 3px 3px var(--shadow);
   color: #000;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .btnExpandMore:hover {
   color: #000;
@@ -449,22 +459,26 @@ nav {
   justify-content: space-between;
   padding: 1rem 0;
   z-index: 50;
-  letter-spacing: -2px;
+  letter-spacing: 4px;
 }
 .navButton {
+  /*writing-mode: vertical-rl;*/
+  /*text-orientation: upright;*/
   writing-mode: vertical-rl;
-  text-orientation: upright;
+  transform:scale(-1);
   text-decoration: none;
   padding: 0.7rem 0.5rem;
   margin: 0;
   font-size: 1rem;
   background-color: var(--lightest);
-  box-shadow: 0 3px 3px var(--shadow);
+  box-shadow: 0 -3px 3px var(--shadow);
   border-radius: 10px;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navButton:hover {
   color: #000;
+  transform:scale(-1.05) !important;
 }
 #professional, #personal, #uni {
   scroll-margin-top: 5rem;
@@ -476,7 +490,7 @@ nav {
 
 /* contact */
 .grecaptcha-badge {
-  bottom: 5.5em !important;
+  margin-bottom: 5em;
   z-index: 20;
 }
 /*contact form*/
@@ -497,6 +511,7 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 #formContainer h1 {
   margin: 0;
@@ -510,7 +525,7 @@ nav {
 }
 .input-container {
   position: relative;
-  margin: 2rem 0;
+  margin: 1rem 0;
   width: 50%;
 }
 .textarea {
@@ -703,13 +718,7 @@ footer a.clickable{
     width: 90%;
   }
   .projectContainer .portfolioLogo {
-    height: 7em;
-  }
-  .projectContainer a {
-    width: 15%;
-  }
-  .projectContainer .info{
-    width: 75%;
+    height: 8.5rem;
   }
   .carousel-indicators {
     margin-bottom: 3rem;
@@ -720,6 +729,9 @@ footer a.clickable{
   }
   #formContainer {
     width: 80%;
+  }
+  .grecaptcha-badge {
+    margin-bottom: 4em;
   }
   /* about */
   .aboutMe, .mySkills, .about, .techskills, .perskills, .interests {
@@ -748,10 +760,13 @@ footer a.clickable{
   h1 {
     font-size: 1.9em;
   }
+  /*portfolio*/
   #portfolioMain {
     padding-left: 1rem;
   }
-  /*portfolio*/
+  .navButton {
+    padding: 0.7rem 2px;
+  }
   #arctaurusImages {
     width: 90% !important;
   }
@@ -808,7 +823,9 @@ footer a.clickable{
     background-color: var(--dark);
     padding: 0;
   }
+
   .menulist{
+    animation-duration: 0.8s;
     display: none;
     width: 100%;
     text-align: right;
@@ -829,11 +846,11 @@ footer a.clickable{
   .general{
     width: 95%;
     padding: 0 1em;
+    margin: 1em auto;
   }
   .me{
     height: 15em;
     display: inline-flex;
-    /*margin: 3em 0 0 0;*/
   }
   .buttons{
     display: none;
@@ -843,13 +860,14 @@ footer a.clickable{
     margin: 0 auto;
     display: block;
     text-align: center;
-    padding-bottom: 1em;
   }
   .buttonsmobile .button{
     margin: 0.5em;
+    padding: 0.5em 1em !important;
   }
   .rest{
-    padding: 2em 0.5em;
+    padding: 1em 0.5em;
+    margin-bottom: 2em;
   }
   .rest img{
     height: 5.5em;
@@ -857,14 +875,14 @@ footer a.clickable{
   }
   /* portfolio */
   #navButtons {
-    padding: 0.5rem 0;
-    letter-spacing: -4px;
+    padding: 0.5rem 2px;
+    /*letter-spacing: 4px;*/
   }
   .portfolioTitle, .projectContainer {
     width: 95%;
   }
   .projectContainer .portfolioLogo{
-    height: 6em;
+    height: 8rem;
   }
   .projectContainer h1, .projectContainer h3{
     font-size: 1.1em;
@@ -893,11 +911,11 @@ footer a.clickable{
   }
   #formContainer {
     width: 90%;
-    padding: 1rem 1.5rem;
-    height: 65%;
+    padding: 0.5rem 1.5rem;
+    height: fit-content;
   }
-  .input-container {
-    margin: 1rem 0;
+  .textarea {
+    margin-bottom: 0.2rem !important;
   }
   /* about */
   .aboutMe, .mySkills, .about, .techskills, .perskills, .interests {
@@ -955,9 +973,12 @@ footer a.clickable{
     width: 75%;
     font-size: 1.1em;
   }
+  .input-container {
+    width: 100%;
+  }
   /* portfolio */
   .projectContainer .portfolioLogo {
-    height: 5em;
+    height: 7.5rem;
   }
   .projectContainer h1, .projectContainer h3{
     font-size: 0.85em;
@@ -969,7 +990,7 @@ footer a.clickable{
     margin-bottom: 2.5rem;
   }
   .navButton {
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 2px;
   }
   /* footer */
   .footerlinks{
@@ -1031,9 +1052,9 @@ footer a.clickable{
   }
   /* portfolio */
   .projectContainer .portfolioLogo {
-    height: 4em;
+    height: 7em;
   }
-  .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a{
+  .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a, .projectContainer h2 a{
     font-size: 0.8rem;
   }
   #video {
@@ -1090,12 +1111,5 @@ footer a.clickable{
   .contactlink{
     width: 95%;
     font-size: 1em;
-  }
-  /* portfolio */
-  .projectContainer .portfolioLogo {
-    height: 4em;
-  }
-  .projectContainer h2, .projectContainer p, .projectContainer li, .projectContainer span, .projectContainer a {
-    font-size: 0.8rem;
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="en" style="overflow: hidden;">
 <head>
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,10 +22,10 @@
     /*}*/
   </style>
 </head>
-<body>
+<body style="overflow: hidden;">
   <header>
     <nav class="menu">
-      <a href="index.html" class="clickable">
+      <a href="/" class="clickable">
         <img class="logo" src="img/logo.png" alt="Logo">
       </a>
       <label class="hamburgermenu" for="toggle" style="color:#f2e9e4">&#9776;</label>
@@ -70,10 +70,12 @@
       <!--      <button type="submit">Send</button>-->
       <!--    </form>-->
 
-    <section id="formContainer">
-      <h1>Send me a message:</h1>
-      <iframe name="hiddenFrame" width="0" height="0" style="display: none; border: none;"></iframe>
-      <form action="sendEmail.php" name="contactForm" id="contactForm" method="POST" target="hiddenFrame" style="text-align: center;">
+<!--    <section id="formContainer">-->
+
+    <iframe name="hiddenFrame" width="0" height="0" style="display: none; border: none;"></iframe>
+    <form action="sendEmail.php" name="contactForm" id="contactForm" method="POST" target="hiddenFrame" style="text-align: center;">
+      <section id="formContainer">
+        <h1>Send me a message:</h1>
         <div class="form-field input-container">
           <label for="contactName">Name *</label>
           <span>Name *</span>
@@ -87,20 +89,19 @@
         <div class="form-field input-container textarea">
           <label for="contactMessage">Message *</label>
           <span>Message *</span>
-          <textarea class="input" name="contactMessage" id="contactMessage" rows="10" cols="50" minlength="20" required></textarea>
+          <textarea class="input" name="contactMessage" id="contactMessage" rows="7" cols="50" minlength="20" required></textarea>
         </div>
-        <!-- captcha -->
-        <div id='recaptcha' class="g-recaptcha animate__animated animate__fadeIn" style="animation-delay: 0.4s;" data-sitekey="6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq" data-callback="onCompleted" data-size="invisible"></div>
         <div class="form-field">
           <button class="button stroke submitform clickable animate__animated animate__fadeIn">Send</button>
         </div>
-      </form>
-      <!-- contact-success -->
-      <div id="message-success" style="display: none; text-align: center;">
-        <i class="fa fa-check"></i>Your message was sent, thank you!<br />
-      </div>
-    </section>
-
+        <!-- contact-success -->
+        <div id="message-success" style="display: none; text-align: center;">
+          <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+        </div>
+      </section>
+      <!--captcha-->
+      <div id='recaptcha' class="g-recaptcha animate__animated animate__fadeIn" style="animation-delay: 0.4s;" data-sitekey="6Ld78eokAAAAABolseqvWvM33oun01v63RSYiUsq" data-callback="onCompleted" data-size="invisible"></div>
+    </form>
   </main>
 
   <footer class="footer" style="bottom:0;">
